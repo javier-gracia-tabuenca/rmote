@@ -4,7 +4,8 @@
 \alias{rmote_device}
 \title{Set device parameters for traditional grahpics plot output}
 \usage{
-rmote_device(type = c("png", "pdf"), filename = NULL, retina = TRUE, ...)
+rmote_device(type = c("png", "pdf"), filename = NULL, retina = TRUE,
+  ...)
 }
 \arguments{
 \item{type}{either "png" or "pdf"}
@@ -18,4 +19,3 @@ rmote_device(type = c("png", "pdf"), filename = NULL, retina = TRUE, ...)
 \description{
 Set device parameters for traditional grahpics plot output
 }
-

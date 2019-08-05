@@ -9,4 +9,3 @@ plot_done()
 \description{
 Let rmote know that a base R plot is complete and ready to serve
 }
-

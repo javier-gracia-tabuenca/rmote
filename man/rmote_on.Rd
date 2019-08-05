@@ -4,8 +4,9 @@
 \alias{rmote_on}
 \title{Set the rmote mode to be on}
 \usage{
-rmote_on(server_dir, help = TRUE, graphics = TRUE, basegraphics = TRUE,
-  htmlwidgets = TRUE, hostname = TRUE, history = TRUE)
+rmote_on(server_dir, help = TRUE, graphics = TRUE,
+  basegraphics = TRUE, htmlwidgets = TRUE, hostname = TRUE,
+  history = TRUE)
 }
 \arguments{
 \item{server_dir}{directory where rmote server is running}
@@ -28,4 +29,3 @@ Set the rmote mode to be on
 \note{
 This is useful when running multiple R sessions on a server, where all will serve the same rmote process.  It is not necessary to call this in the same session on which \code{\link{start_rmote}} has been called, but on any other R sessions.
 }
-

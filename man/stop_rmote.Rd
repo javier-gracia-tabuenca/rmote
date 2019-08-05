@@ -9,4 +9,3 @@ stop_rmote()
 \description{
 Stop an rmote server
 }
-

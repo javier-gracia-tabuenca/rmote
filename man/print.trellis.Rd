@@ -14,4 +14,3 @@
 \description{
 Print trellis plot to servr
 }
-

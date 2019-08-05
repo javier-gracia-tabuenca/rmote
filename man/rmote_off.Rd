@@ -9,4 +9,3 @@ rmote_off()
 \description{
 Set the rmote mode to be off
 }
-

@@ -14,4 +14,3 @@
 \description{
 Print ggplot2 plot to servr
 }
-

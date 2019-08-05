@@ -4,9 +4,10 @@
 \alias{start_rmote}
 \title{Initialize a remote servr}
 \usage{
-start_rmote(server_dir = file.path(tempdir(), "rmote_server"), port = 4321,
-  daemon = TRUE, help = TRUE, graphics = TRUE, basegraphics = TRUE,
-  htmlwidgets = TRUE, hostname = TRUE, history = TRUE)
+start_rmote(server_dir = file.path(tempdir(), "rmote_server"),
+  port = 4321, daemon = TRUE, help = TRUE, graphics = TRUE,
+  basegraphics = TRUE, htmlwidgets = TRUE, hostname = TRUE,
+  history = TRUE)
 }
 \arguments{
 \item{server_dir}{directory to launch servr from}
@@ -30,4 +31,3 @@ start_rmote(server_dir = file.path(tempdir(), "rmote_server"), port = 4321,
 \description{
 Initialize a remote servr
 }
-
