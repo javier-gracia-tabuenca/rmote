@@ -1,9 +1,10 @@
 
 #' Print an htmlwidget to servr
 #'
+#' @import rmarkdown
 #' @param x rmd file
 #' @param \ldots  additional parameters
-#' @S3method render rmd file
+#' @export
 render <- function(x, ...) {
 
   #widget_opt <- getOption("rmote_htmlwidgets", FALSE)
@@ -13,13 +14,17 @@ render <- function(x, ...) {
     message("serving render through rmote")
 
     res <- try({
-      
+     
+      server_dir <- get_server_dir()     
+
       #render 
       rmote::rmote_off()
       html <- rmarkdown::render(x)
-      rmote::rmote_on()
-      
-      write_html(html)
+      rmote::rmote_on(server_dir)
+	
+      file.copy(html,file.path(server_dir, "index.html"))     
+
+      #write_html(html)
     })
 
  
