@@ -22,7 +22,7 @@ render <- function(x, ...) {
       html <- rmarkdown::render(x)
       rmote::rmote_on(server_dir)
 	
-      file.copy(html,file.path(server_dir, "index.html"))     
+      file.copy(html, file.path(server_dir, "index.html"), overwrite = TRUE)     
 
       #write_html(html)
     })
